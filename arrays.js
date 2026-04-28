@@ -46,34 +46,34 @@
 // console.log(revbike);
 
 // ------> adding element in the middle of an array
-let animals = ["lion","wolf","deer","cheetha"];
+// let animals = ["lion","wolf","deer","cheetha"];
 
-console.log(animals);
-let newanimals = [];
+// console.log(animals);
+// let newanimals = [];
 
-for(i=0;i<=animals.length-1;i++){
-    newanimals[newanimals.length]=animals[i];
-    if(animals[i]=="wolf"){
-        newanimals[newanimals.length]="Tiger";
-    }
-}
+// for(i=0;i<=animals.length-1;i++){
+//     newanimals[newanimals.length]=animals[i];
+//     if(animals[i]=="wolf"){
+//         newanimals[newanimals.length]="Tiger";
+//     }
+// }
 
-console.log(newanimals)
+// console.log(newanimals)
 
-let fruit = ["apple", "banana",
-    "mango", "orange", "kiwi",
-    "Musk melon", "Sappota", "Pomogrante"];
-console.log("Before Adding",fruit)
+// let fruit = ["apple", "banana",
+//     "mango", "orange", "kiwi",
+//     "Musk melon", "Sappota", "Pomogrante"];
+// console.log("Before Adding",fruit)
 
-for(i=0;i<=fruit.length-1;i++){
-    if(fruit[i]=="orange"){
-        fruit.splice(i+1,0,"Grape"); // ----> splice is used for add elements(position,delete count,new element)
-        break;
-    }
+// for(i=0;i<=fruit.length-1;i++){
+//     if(fruit[i]=="orange"){
+//         fruit.splice(i+1,0,"Grape"); // ----> splice is used for add elements(position,delete count,new element)
+//         break;
+//     }
 
-}
+// }
 
-console.log("After Adding",fruit)
+// console.log("After Adding",fruit)
 
 
 
@@ -112,35 +112,3 @@ console.log("After Adding",fruit)
 // }
 // console.log("isexists ===",isExists)
 // console.log(fruits)
-
-// -------> to find unique values by using looping
-
-let fruits = ["apple", "banana", "apple", "banana", "pomogrante", "mango",
-    "mango", "orange", "kiwi",
-    "musk melon", "Sappota", "pomogrante", "mango", "kiwi"];
-
-let fruitsnew = [];
-
-for (i = 0; i <= fruits.length - 1; i++) {
-    // console.log(i);
-    if (!fruitsnew.includes(fruits[i])) {
-        fruitsnew.push(fruits[i]);
-    }
-}
-
-console.log(fruits);
-
-console.log(fruitsnew);
-
-// by creating a new set
-
-let a = [1, 2, 1, 2, 11, 10];
-
-console.log("Before Updating------", a);
-
-let s = new Set(a);
-
-let b = [...s]
-
-console.log("Updates array ----", b)
-
