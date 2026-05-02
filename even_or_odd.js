@@ -1,17 +1,18 @@
-// let number = 5;
+let number = 5;
 
-// if (number % 2 === 0) {
-//     console.log("Number is even");
-// }
-// else {
-//     console.log("Number is odd");
-// }
+if (number % 2 === 0) {
+    console.log("Number is even");
+}
+else {
+    console.log("Number is odd");
+}
 
+let num = 6;
+if((num&1) === 1){
+    console.log("Given number is odd")
+}
+else{
+    console.log("given number is even")
+}
 
-wors = "listen"
-for(let i=0;i<=wors.length-1;i++){
-    console.log(i);
-    return;
-    console.log(wors[i]);
-};
 
