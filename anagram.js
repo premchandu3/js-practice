@@ -23,7 +23,10 @@ function anagram(word1, word2) {
     };
 
 // ** we have to count the elements in the strings
+// first we created an empty object
     let count = {};
+
+    // counting letters in word1 and storing in count object 
 
     for (let i = 0; i <= word1.length - 1; i++) {
         let char = word1[i];
@@ -34,6 +37,10 @@ function anagram(word1, word2) {
             count[char] = 1;
         }
     }
+
+    // same counting and checks if letter is in count object
+    // it reduces -1 ; so it becomes 0 if count is 1
+
     for (let i = 0; i <= word2.length - 1; i++) {
         let char = word2[i];
         if (count[char]) {
@@ -44,6 +51,9 @@ function anagram(word1, word2) {
             return;
         }
     }
+
+    // it will check the count of keys if it is 0 then
+    // the words are anagram
 
     for (let keys in count) {
         if (count[keys] !== 0) {

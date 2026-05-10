@@ -124,11 +124,11 @@ function filter(arr, logic) {
 let passed = filter(score, passstudents);
 console.log(passed);
 
-let names = final(score,namesofstu)
+let names = final(score, namesofstu)
 console.log(names);
 
-let add5 = final(score,extra5);
-console.log("After adding extra 5 marks-----" ,add5);
+let add5 = final(score, extra5);
+console.log("After adding extra 5 marks-----", add5);
 
-let avgg = filter(score,avg);
+let avgg = filter(score, avg);
 console.log(avgg)

@@ -1,7 +1,7 @@
 // -------> to find unique values by using looping
 
 let fruits = ["apple", "banana", "apple", "banana",
-     "pomogrante", "mango","mango", "orange", "kiwi",
+    "pomogrante", "mango", "mango", "orange", "kiwi",
     "musk melon", "Sappota", "pomogrante", "mango", "kiwi"];
 
 let fruitsnew = [];
@@ -10,9 +10,10 @@ let duplicate = [];
 for (let i = 0; i <= fruits.length - 1; i++) {
     // console.log(i);
     if (fruitsnew.includes(fruits[i])) {
-        if(!duplicate.includes(fruits[i])){
-        duplicate.push(fruits[i]);
-    }}
+        if (!duplicate.includes(fruits[i])) {
+            duplicate.push(fruits[i]);
+        }
+    }
     else {
         fruitsnew.push(fruits[i]);
     }
@@ -38,10 +39,10 @@ for (let i = 0; i <= fruits.length - 1; i++) {
 }
 
 let maxfruit = {};
-let maxcount = 0 ;
+let maxcount = 0;
 
-for(let fruit in unique){
-    if(unique[fruit]>maxcount){
+for (let fruit in unique) {
+    if (unique[fruit] > maxcount) {
         maxcount = unique[fruit];
         maxfruit = fruit;
     }
@@ -54,9 +55,9 @@ console.log(Object.keys(unique));
 
 console.log(Object.values(unique));
 
-console.log("Highest repeated fruit :",maxfruit);
+console.log("Highest repeated fruit :", maxfruit);
 
-console.log("Highest count----",maxcount);
+console.log("Highest count----", maxcount);
 
 
 

@@ -98,6 +98,6 @@ let sol = products.reduce((acc, item) => {
         acc[category] = 1;
     }
     return acc;
-},{})
+}, {})
 
 console.log(sol);

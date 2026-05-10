@@ -8,11 +8,11 @@ else {
 }
 
 let num = 6;
-if((num&1) === 1){
-    console.log("Given number is odd")
+if((num&1) === 0){
+    console.log("Given number is even")
 }
 else{
-    console.log("given number is even")
+    console.log("given number is odd")
 }
 
 

@@ -104,15 +104,40 @@ function glbscope(){
 }
 glbscope()
 console.log(add);
+
 console.log("-".repeat(20));
 
 
 // block scope : Block scope means a variable
 // declared inside {} can only be accessed inside that block.
+//Variables declared with let or const inside {} are block scoped.
 
 function blkscope(){
     let fc = 99;
     console.log(fc);
 }
 blkscope();
-// console.log(fc);
+// console.log(fc);we can't acces outside the block
+
+
+// functional scope :Variables declared inside a function are accessible only 
+// within that function.
+
+function testFunc() {
+var localVar = "I am local";
+console.log(localVar); // Accessible here
+}
+// console.log(localVar); can't be accesed here
+
+
+function compare() {
+    if (true) {
+        var a = 100;
+        let b = 200;
+    }
+
+    console.log(a); // works
+    //console.log(b); // error
+}
+
+compare();

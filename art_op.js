@@ -26,3 +26,4 @@ x = name * c;
 console.log(sum, sub, mul, div, mod, power, res, t, x, p);
 
 
+
